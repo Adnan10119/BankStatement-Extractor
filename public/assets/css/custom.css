@@ -1,0 +1,28 @@
+/* body{
+    font-family: 'DIN Alternate' !important;
+} */
+.bg-color {
+    background-color: #032E65 !important;
+}
+.bg-color-green{
+    background-color: #0FB397 !important;
+}
+.space{
+    justify-content: space-between;
+}
+.tabs > li {
+    color: #fff;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d3161;
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.active[data-v-fa6affac] {
+    border-top: 5px solid #0fb397;
+}
