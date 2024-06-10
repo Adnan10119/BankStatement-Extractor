@@ -33,9 +33,9 @@ class APIController extends Controller
     function signRequest($param, $base, $endpoint){
         $method ='POST';
         $uri = $endpoint;
-        $secretKey  = 'tejrNEWXx4NMlSC81rkXohy/d00xjTRjyCfmQ5hr';
-        $access_key = 'AKIA4LBKETVWEYHNZK5C';
-        $region = 'us-west-2';
+        $secretKey  = config('app.AWS_SECRET_ACCESS_KEY');
+        $access_key = config('app.AWS_ACCESS_KEY_ID');
+        $region = config('app.AWS_DEFAULT_REGION');
         $service = 'sagemaker';
         $options = array(); $headers = array();
         $host = $base;
